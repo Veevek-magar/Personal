@@ -14,7 +14,7 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url(images/sitebg.jpg) no-repeat center fixed;
+    background: url(images/man.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -317,14 +317,14 @@ li{
 
 }
 
-.container .cta{
+.cta{
     font-size: 2rem;
     text-transform: uppercase;
-    color: #eee;
+    color: red;
     transition: color 650ms;
 }
 
-.container .cta:hover{
+.cta:hover{
     color: #2f67cd;
 
 }
@@ -386,12 +386,14 @@ li{
     margin: 10px 50px;
 }
 .gallery img{
+    display: inline-flex;
     filter: grayscale(100%);
-    width: 390px;
-    min-height: 290px;
+    width: 295px;
+    min-height: 250px;
     padding: 15px;
-    margin: auto;
     border-radius: 40px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -540,6 +542,11 @@ input[type="submit"]:hover{
     .icon-container i{
         font-size: 4rem;
     }
+    .gallery img{
+    filter: grayscale(100%);
+    width: 300px;
+    min-height: 200px;
+    border-radius: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -591,12 +598,14 @@ input[type="submit"]:hover{
         right: 2rem;
     }
     .gallery img{
-        align-items: center;
-        display: block;
-    }
-
-
+        filter: grayscale(100%);
+    width: 300px;
+    min-height: 200px;
+    border-radius: 40px;
+}
 
 }
+
+
 
 /*End media queries*/
